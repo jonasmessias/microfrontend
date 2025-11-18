@@ -3,6 +3,7 @@
   "version": "1.0.0",
   "description": "Microfrontend architecture with React 18, TypeScript, Zustand, Module Federation",
   "private": true,
+  "packageManager": "npm@10.2.4",
   "workspaces": [
     "packages/*"
   ],
