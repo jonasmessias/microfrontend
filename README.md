@@ -220,11 +220,12 @@ EventBus.on('cart:add-item', (data) => addItem(data));
 This monorepo uses **Turborepo** for intelligent build orchestration:
 
 - **Intelligent caching**: Builds are cached and never re-executed unnecessarily
-- **Task orchestration**: Runs tasks across packages in optimal order  
+- **Task orchestration**: Runs tasks across packages in optimal order
 - **Parallel execution**: Executes independent tasks simultaneously
 - **Dependency awareness**: Understands package relationships automatically
 
 **Key benefits:**
+
 - ⚡ **10x faster builds** with intelligent caching
 - 🎯 **Runs only what changed** (affected packages detection)
 - 📦 **Optimized task pipeline** (build → test → lint)
