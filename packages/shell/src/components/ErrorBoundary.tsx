@@ -25,7 +25,7 @@ export class ErrorBoundary extends Component<ErrorBoundaryProps, ErrorBoundarySt
     console.error(`[ErrorBoundary] ${this.props.mfeName || 'MFE'} Error:`, error, errorInfo);
 
     // In production, send to monitoring service (Sentry, Datadog, etc)
-    if (process.env.NODE_ENV === 'production') {
+    if (import.meta.env.PROD) {
       // window.Sentry?.captureException(error);
     }
   }
